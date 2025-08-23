@@ -1,0 +1,44 @@
+@keyframes blink-ace-animate-smooth {
+
+	from,
+	to {
+		opacity: 1;
+		transform: scaleY(1);
+	}
+
+	45% {
+		opacity: 1;
+		transform: scaleY(0.1);
+	}
+
+	60% {
+		opacity: 0;
+		transform: scaleY(0.2);
+		color: red !important;
+	}
+
+	/* Collapse */
+	80% {
+		opacity: 0;
+		transform: scaleY(1);
+	}
+}
+
+@keyframes ace_animate_smooth {
+
+	0%,
+	100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+}
+
+.ace_editor .ace_cursor {
+	/* Apply the custom animation */
+	/*  animation: collapse-expand 1.5s ease-out 0.1s infinite;*/
+	animation-duration: 1s;
+	transition: 0.15s all ease-out;
+}

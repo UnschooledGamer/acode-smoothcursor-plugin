@@ -1,0 +1,29 @@
+{
+  "id": "ug.acode-plugin.smoothcursor",
+  "name": "Smooth Cursor (Ace Editor)",
+  "description": "Smooth Cursor(Impro & Cursor Carat Animation addition",
+  "version": "0.0.1",
+  "author": {
+    "name": "Unschooled Gamer",
+    "url": "https://github.com/unschooledgamer",
+    "email": "unschooledgamer+acodeeditor@gmail.com",
+    "github": "UnschooledGamer"
+  },
+  "changelogs": "CHANGELOG.md",
+  "files": [
+    "style.css"
+  ],
+  "icon": "icon.png",
+  "keywords": [
+    "Smooth Cursor",
+    "Cursor Carat Animation",
+    "Ace Editor",
+    "Manipulates Ace Editor Behaviour"
+  ],
+  "main": "dist/main.js",
+  "license": "Apache-2.0",
+  "minVersionCode": 292,
+  "price": 0,
+  "readme": "readme.md",
+  "repository": "https://github.com/unschooledgamer/acode-smoothcursor-plugin"
+}
