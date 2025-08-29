@@ -19,9 +19,17 @@ class AcodePlugin {
 
         linkElement.id = `${plugin.id}`
         linkElement.rel = "stylesheet"
-        linkElement.href = `${this.baseUrl}/style.css`
+        linkElement.href = `${this.baseUrl}/style-clean-default-animations.css`
         this.styleElement = document.head.appendChild(linkElement)
 
+        editorManager.editor.on("change", () => {
+            const cursor = document.querySelector(".ace_cursor")
+            cursor?.classList.add("ace_cursor_animate")
+
+            setTimeout(() => {
+                cursor?.classList.remove("ace_cursor_animate")
+            }, 11000)
+        })
     }
 
     async destroy() {

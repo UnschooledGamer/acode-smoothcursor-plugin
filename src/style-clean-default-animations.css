@@ -1,0 +1,53 @@
+.ace_cursor,
+.ace_cursor::after {
+    animation: none !important;
+}
+
+/* Style the base cursor for the custom pseudo-element */
+.ace_cursor {
+    border: none !important;
+    position: absolute;
+    transition: 0.15s all ease-out;
+}
+
+/* Define the pseudo-element for the animated effect */
+.ace_cursor::after {
+    content: "";
+    display: block;
+    width: 2px;
+    background: black;
+    background: var(--active-color);
+    height: 100%;
+    transform-origin: center center;
+}
+
+/* Add a smooth blinking animation to the custom pseudo-element */
+@keyframes custom-smooth-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.ace_cursor:not(.ace_cursor_animate)::after {
+    transition: 1s all ease-in-out;
+    animation: custom-smooth-blink 1s forwards infinite !important;
+}
+
+/* The collapsing animation that is triggered by the JS handler */
+@keyframes collapse-expand {
+    /*0% { transform: scaleY(1); opacity: 1; }*/
+    /*45% { transform: scaleY(0.1); opacity: 1; }*/
+    /*60% { transform: scaleY(0.2); opacity: 0; }*/
+    /*80% { transform: scaleY(1); opacity: 1; }*/
+    0%,20% {
+        transform: scaleY(1)
+    }
+
+    80%,to {
+        transform: scaleY(0)
+    }
+}
+
+.ace_cursor_animate::after {
+    animation: collapse-expand .5s ease-in-out 0s 20 alternate !important;
+    transition: 0.15s all ease-out;
+}
