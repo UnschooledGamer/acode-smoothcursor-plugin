@@ -11,7 +11,7 @@
   },
   "changelogs": "CHANGELOG.md",
   "files": [
-    "style.css"
+    "style-clean-default-animations.css"
   ],
   "icon": "icon.png",
   "keywords": [
