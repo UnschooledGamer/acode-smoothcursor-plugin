@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const jszip = require('jszip');
 
-const iconFile = path.join(__dirname, '../icon.png');
+const iconFile = path.join(__dirname, '../icon.webp');
 const pluginJSON = path.join(__dirname, '../plugin.json');
 const distFolder = path.join(__dirname, '../dist');
 let readmeDotMd = path.join(__dirname, '../readme.md');
