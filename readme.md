@@ -1,6 +1,6 @@
 # Smooth Cursor (Ace Editor)
 
-> Animation from VScode 😉
+> Animation from VSCode 😉
 
 Enhance your coding experience in Acode editor with smooth cursor animations for the Ace Editor component. This plugin replaces the default cursor behavior with a more visually pleasing and animated cursor that provides better visual feedback during editing.
 
