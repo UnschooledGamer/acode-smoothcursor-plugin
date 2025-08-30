@@ -11,6 +11,17 @@ Enhance your coding experience in Acode editor with smooth cursor animations for
 - Automatic cleanup when the plugin is unloaded
 - Lightweight and performance-optimized implementation
 
+## Installation
+
+<details>
+    <summary>Uninstall? (expand this)</summary>
+    Uninstall the Plugin/Disable it.
+</details>
+
+1. Install the plugin directly from Acode's plugin marketplace/extenstions
+2. (If not Enabled) Enable the plugin in Acode settings
+3. (If needed) Restart Acode to apply the changes
+
 ## How It Works
 
 The plugin works by injecting a custom CSS stylesheet (`style-clean-default-animations.css`) into the Acode editor's DOM. This stylesheet overrides the default Ace Editor cursor styling and adds smooth animations including:
@@ -23,12 +34,6 @@ The main TypeScript file (`main.ts`) handles:
 - Injecting the stylesheet when the plugin initializes
 - Adding animation classes to the cursor element when the editor content changes
 - Cleaning up the injected styles when the plugin is unloaded
-
-## Installation
-
-1. Install the plugin directly from Acode's plugin marketplace
-2. Enable the plugin in Acode settings
-3. Restart Acode to apply the changes
 
 ## Files
 

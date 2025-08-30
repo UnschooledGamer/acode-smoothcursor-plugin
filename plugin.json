@@ -1,5 +1,5 @@
 {
-  "id": "ug.acode-plugin.smoothcursor",
+  "id": "ug.acode_plugin.smoothcursor",
   "name": "Smooth Cursor (Ace Editor)",
   "description": "Smooth Cursor(Improved & Cursor Carat Animation addition)",
   "version": "0.0.2",
