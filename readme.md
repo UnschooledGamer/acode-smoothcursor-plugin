@@ -13,10 +13,10 @@ Enhance your coding experience in Acode editor with smooth cursor animations for
 
 ## Installation
 
-<details>
-    <summary>Uninstall? (expand this)</summary>
-    Uninstall the Plugin/Disable it.
-</details>
+> <details>
+>    <summary><b> Uninstall?</b> (expand this)</summary>
+>    Uninstall the Plugin/Disable it.
+> </details>
 
 1. Install the plugin directly from Acode's plugin marketplace/extenstions
 2. (If not Enabled) Enable the plugin in Acode settings
